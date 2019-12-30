@@ -1,0 +1,194 @@
+2019-12-30 14:23:48.883 [info]  ------------------------------------------------------
+2019-12-30 14:23:48.884 [info]  LuaEngine 1, 32, 12, 191230 started.
+2019-12-30 14:23:48.884 [info]  Compiled at 14:22:21, Dec 30 2019
+2019-12-30 14:23:48.884 [info]  Windows version: Win7.7601
+2019-12-30 14:23:48.884 [info]  Initialize LuaEngine successfully.
+2019-12-30 14:23:48.884 [info]  ********************* ydwe initialize start *********************
+2019-12-30 14:23:48.884 [info]  Initializing 'utiliy'
+2019-12-30 14:23:48.884 [info]  Initializing 'bee.filesystem'
+2019-12-30 14:23:48.885 [info]  Initializing 'bee.subprocess'
+2019-12-30 14:23:48.885 [info]  Initializing 'ffi.unicode'
+2019-12-30 14:23:48.885 [info]  Initializing 'ffi'
+2019-12-30 14:23:48.886 [info]  ydwe path D:/Git/YDWE/Build/publish/Release
+2019-12-30 14:23:48.886 [info]  Initializing 'localization'
+2019-12-30 14:23:48.886 [info]  Initializing 'i18n'
+2019-12-30 14:23:48.887 [info]  [i18n]current language	zh-CN
+2019-12-30 14:23:48.887 [info]  Initializing 'event'
+2019-12-30 14:23:48.888 [info]  Initializing 'wehelper'
+2019-12-30 14:23:48.889 [info]  Start installing inline hooks.
+2019-12-30 14:23:48.889 [info]  Found WeGetSystemParameter at 0x004D1DB0.
+2019-12-30 14:23:48.889 [info]  WeGetSystemParameter hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeVerifyMapCellsLimit at 0x004E1EF0.
+2019-12-30 14:23:48.889 [info]  Found GetUnkownFlag at 0x004D0AC0.
+2019-12-30 14:23:48.889 [info]  WeVerifyMapCellsLimit hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeTriggerNameCheck at 0x005A4B40.
+2019-12-30 14:23:48.889 [info]  WeTriggerNameCheck hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeTriggerNameInputCharCheck at 0x0042E390.
+2019-12-30 14:23:48.889 [info]  WeTriggerNameInputCharCheck hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeSetWindowCaption at 0x00433A00.
+2019-12-30 14:23:48.889 [info]  WeSetWindowCaption hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeSetMenuItem at 0x0042AA10.
+2019-12-30 14:23:48.889 [info]  WeSetMenuItem hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeStringCompare at 0x004D2D90.
+2019-12-30 14:23:48.889 [info]  WeStringCompare hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found TriggerEditorEditboxCopy at 0x0071FE90.
+2019-12-30 14:23:48.889 [info]  WeTriggerEditorEditboxCopy hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Found WeUtf8ToAnsi at 0x00429CD0.
+2019-12-30 14:23:48.889 [info]  WeUtf8ToAnsi hook installation succeeded.
+2019-12-30 14:23:48.889 [info]  Installing inline hooks complete.
+2019-12-30 14:23:48.889 [info]  IAT hook initialization started.
+2019-12-30 14:23:48.889 [info]  WE SHBrowseForFolderA IAT hook succeeded.
+2019-12-30 14:23:48.889 [info]  WE GetSaveFileNameA IAT hook succeeded.
+2019-12-30 14:23:48.889 [info]  WE GetOpenFileNameA IAT hook succeeded.
+2019-12-30 14:23:48.889 [info]  IAT hook initialization completed.
+2019-12-30 14:23:48.889 [info]  Patches initialization started.
+2019-12-30 14:23:48.889 [info]  Installing syntax check patch
+2019-12-30 14:23:48.889 [info]  Patch syntaxCheck in 0x005BC089 success.
+2019-12-30 14:23:48.889 [info]  Installing auto disable patch
+2019-12-30 14:23:48.889 [info]  Patch autoDisable in 0x005CEFF3 success.
+2019-12-30 14:23:48.889 [info]  Installing enable trigger check patch
+2019-12-30 14:23:48.889 [info]  Patch enableTriggerCheck1 in 0x005C88F5 success.
+2019-12-30 14:23:48.889 [info]  Patch enableTriggerCheck2 in 0x005C88DA success.
+2019-12-30 14:23:48.889 [info]  Installing doodad limit patch
+2019-12-30 14:23:48.889 [info]  Patch doodadLimit in 0x0054CAD8 success.
+2019-12-30 14:23:48.889 [info]  Installing unit/item limit patch
+2019-12-30 14:23:48.889 [info]  Patch unitItemLimit in 0x00554B7B success.
+2019-12-30 14:23:48.889 [info]  Installing editor multi-instance patch
+2019-12-30 14:23:48.889 [info]  Patch editorInstanceCheck in 0x00435870 success.
+2019-12-30 14:23:48.889 [info]  Installing attack table patch
+2019-12-30 14:23:48.889 [info]  Patches initialization completed.
+2019-12-30 14:23:48.889 [info]  YDWE startup complete.
+2019-12-30 14:23:48.889 [info]  Initializing 'virtual_mpq'
+2019-12-30 14:23:48.890 [info]  Initializing 'version'
+2019-12-30 14:23:48.890 [info]  Initializing 'file_version'
+2019-12-30 14:23:48.890 [info]  Initializing 'config'
+2019-12-30 14:23:48.891 [info]  war3 path D:/war3
+2019-12-30 14:23:48.891 [info]  Initializing 'plugin'
+2019-12-30 14:23:48.891 [info]  Initializing 'ffi.loadlibrary'
+2019-12-30 14:23:48.891 [info]  Initializing 'ffi.gui'
+2019-12-30 14:23:48.891 [info]  RegisterEvent: EVENT_WINDOW_MESSAGE
+2019-12-30 14:23:48.891 [info]  Initializing 'ydwe_on_menu'
+2019-12-30 14:23:48.892 [info]  RegisterEvent: EVENT_INIT_MENU
+2019-12-30 14:23:48.892 [info]  Initializing 'ydwe_on_save'
+2019-12-30 14:23:48.892 [info]  Initializing 'compiler'
+2019-12-30 14:23:48.892 [info]  Initializing 'compiler.inject_code'
+2019-12-30 14:23:48.892 [info]  Initializing 'compiler.wave'
+2019-12-30 14:23:48.893 [info]  Initializing 'compiler.template'
+2019-12-30 14:23:48.893 [info]  Initializing 'compiler.jasshelper'
+2019-12-30 14:23:48.893 [info]  Initializing 'ffi.stormlib'
+2019-12-30 14:23:48.894 [info]  Initializing 'ev'
+2019-12-30 14:23:48.894 [info]  Initializing 'w3x2lni.map_packer'
+2019-12-30 14:23:48.894 [info]  RegisterEvent: EVENT_NEW_SAVE_MAP
+2019-12-30 14:23:48.894 [info]  Initializing 'ydwe_on_test'
+2019-12-30 14:23:48.894 [info]  Initializing 'compiler.w3x2lni.init'
+2019-12-30 14:23:48.895 [info]  Initializing 'w3xparser'
+2019-12-30 14:23:48.895 [info]  Initializing 'lni'
+2019-12-30 14:23:48.895 [info]  Initializing 'lpeglabel'
+2019-12-30 14:23:48.895 [info]  Initializing 'lml'
+2019-12-30 14:23:48.896 [info]  Initializing 'compiler.w3x2lni.data_load'
+2019-12-30 14:23:48.897 [info]  Initializing 'mapdump'
+2019-12-30 14:23:48.897 [info]  RegisterEvent: EVENT_TEST_MAP
+2019-12-30 14:23:48.897 [info]  Initializing 'ydwe_on_startup'
+2019-12-30 14:23:48.898 [info]  Initializing 'w3x2lni.check_object'
+2019-12-30 14:23:48.898 [info]  Initializing 'virtual_storm'
+2019-12-30 14:23:48.898 [info]  Initializing 'ffi.storm'
+2019-12-30 14:23:48.899 [info]  Initializing 'w3x2lni.open_map'
+2019-12-30 14:23:48.899 [info]  Initializing 'w3x2lni.lniloader'
+2019-12-30 14:23:48.899 [info]  Initializing 'w3x2lni.wtgloader'
+2019-12-30 14:23:48.899 [info]  Initializing 'w3x2lni.wtg_checker'
+2019-12-30 14:23:48.900 [info]  Initializing 'w3x2lni.wtg_reader'
+2019-12-30 14:23:48.900 [info]  Initializing 'triggerdata'
+2019-12-30 14:23:48.900 [info]  Initializing 'ui-builder.init'
+2019-12-30 14:23:48.900 [info]  Initializing 'ui-builder.old-reader'
+2019-12-30 14:23:48.901 [info]  Initializing 'ui-builder.new-reader'
+2019-12-30 14:23:48.901 [info]  Initializing 'ui-builder.old-writer'
+2019-12-30 14:23:48.901 [info]  Initializing 'ui-builder.new-writer'
+2019-12-30 14:23:48.901 [info]  Initializing 'ui-builder.merge'
+2019-12-30 14:23:48.902 [info]  Initializing 'uiloader'
+2019-12-30 14:23:48.902 [info]  Initializing 'stringify_slk'
+2019-12-30 14:23:48.902 [info]  Initializing 'mpqloader'
+2019-12-30 14:23:48.902 [info]  RegisterEvent: EVENT_WE_START
+2019-12-30 14:23:48.902 [info]  RegisterEvent: EVENT_WE_EXIT
+2019-12-30 14:23:48.902 [info]  RegisterEvent: EVENT_MSS_LOAD
+2019-12-30 14:23:48.902 [info]  Initializing 'ydwe_on_dialog_message'
+2019-12-30 14:23:48.903 [info]  Initializing 'WEString'
+2019-12-30 14:23:48.909 [info]  RegisterEvent: EVENT_DIALOG_MESSAGE
+2019-12-30 14:23:48.909 [info]  Initializing 'ydwe_on_new_object_id'
+2019-12-30 14:23:48.909 [info]  RegisterEvent: EVENT_NEW_OBJECT_ID
+2019-12-30 14:23:48.909 [info]  ********************* ydwe initialize end *********************
+2019-12-30 14:23:48.919 [info]  Entering main program.
+2019-12-30 14:23:48.920 [info]  ********************* on startup start *********************
+2019-12-30 14:23:48.922 [info]  ydwe version 1.32.12.191230
+2019-12-30 14:23:48.922 [info]  war3 version 1.26.0.6401
+2019-12-30 14:23:48.922 [info]  Initializing 'gitlog'
+2019-12-30 14:23:48.922 [info]  commit: 410db4e195974253f775c22d012d2187ae7685d5
+2019-12-30 14:23:48.922 [info]  data: Fri Dec 27 16:57:42 2019 +0800
+2019-12-30 14:23:48.922 [info]  war3 path D:/war3
+2019-12-30 14:23:48.922 [info]  check_conflicting_ui
+2019-12-30 14:23:48.922 [info]  check_conflicting_units
+2019-12-30 14:23:48.922 [info]  clear_potential_conflicting
+2019-12-30 14:23:48.922 [info]  check_war3_version
+2019-12-30 14:23:48.928 [info]  Load plugin config D:/Git/YDWE/Build/publish/Release/plugin/tesh/Tesh.plcfg
+2019-12-30 14:23:48.933 [info]  Tesh loaded successfully.
+2019-12-30 14:23:48.933 [info]  Load plugin config D:/Git/YDWE/Build/publish/Release/plugin/YDClient.plcfg
+2019-12-30 14:23:48.934 [info]  YDClient loaded successfully.
+2019-12-30 14:23:48.934 [info]  Load plugin config D:/Git/YDWE/Build/publish/Release/plugin/YDColorizer/YDColorizer.plcfg
+2019-12-30 14:23:48.935 [warn]  failed: disable
+2019-12-30 14:23:48.935 [info]  Load plugin config D:/Git/YDWE/Build/publish/Release/plugin/YDTaskbarSupport.plcfg
+2019-12-30 14:23:48.949 [info]  YDTaskbarSupport loaded successfully.
+2019-12-30 14:23:48.949 [info]  Load plugin config D:/Git/YDWE/Build/publish/Release/plugin/YDTrigger.plcfg
+2019-12-30 14:23:48.950 [info]  YDTrigger loaded successfully.
+2019-12-30 14:23:48.950 [info]  Initializing 'ui'
+2019-12-30 14:23:48.951 [info]  Initializing 'bee.registry'
+2019-12-30 14:23:48.951 [info]  ********************* on startup end *********************
+2019-12-30 14:23:49.399 [info]  virtual_mpq 'worldeditdata'
+2019-12-30 14:23:49.402 [info]  virtual_mpq 'worldeditstrings'
+2019-12-30 14:23:49.419 [info]  virtual_mpq 'triggerdata'
+2019-12-30 14:23:49.419 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/japi
+2019-12-30 14:23:49.423 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydwe
+2019-12-30 14:23:49.520 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydtrigger
+2019-12-30 14:23:49.531 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/unknownui
+2019-12-30 14:23:49.578 [info]  virtual_mpq 'triggerstrings'
+2019-12-30 14:23:49.671 [info]  Loading provider D:\war3\redist\miles\Mp3dec.asi
+2019-12-30 14:23:49.674 [info]  Loading provider D:\war3\redist\miles\Mssdolby.m3d
+2019-12-30 14:23:49.675 [info]  Loading provider D:\war3\redist\miles\Msseax2.m3d
+2019-12-30 14:23:49.677 [info]  Loading provider D:\war3\redist\miles\Mssfast.m3d
+2019-12-30 14:23:49.678 [info]  Loading provider D:\war3\redist\miles\Reverb3.flt
+2019-12-30 14:23:50.688 [info]  ********************* on menuinit start *********************
+2019-12-30 14:23:50.688 [info]  ********************* on menuinit end *********************
+2019-12-30 14:24:00.400 [info]  Open map	D:\YDWE\Maps\JFTestMapTrigger\src.w3x
+2019-12-30 14:24:00.400 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/japi
+2019-12-30 14:24:00.403 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydwe
+2019-12-30 14:24:00.501 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydtrigger
+2019-12-30 14:24:00.511 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/unknownui
+2019-12-30 14:24:01.592 [info]  OpenPathAsArchive	Custom_V1
+2019-12-30 14:24:01.804 [info]  virtual_mpq 'worldeditdata'
+2019-12-30 14:24:01.807 [info]  virtual_mpq 'worldeditstrings'
+2019-12-30 14:24:01.825 [info]  virtual_mpq 'triggerdata'
+2019-12-30 14:24:01.825 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/japi
+2019-12-30 14:24:01.828 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydwe
+2019-12-30 14:24:01.928 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydtrigger
+2019-12-30 14:24:01.938 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/unknownui
+2019-12-30 14:24:01.988 [info]  virtual_mpq 'triggerstrings'
+2019-12-30 14:24:07.497 [info]  Open map	D:\YDWE\Maps\JFTestMapTrigger\src\.w3x
+2019-12-30 14:24:07.497 [error] ...\Build\publish\Release\script\ydwe\w3x2lni\lniloader.lua:151: 'tostring' must return a string to 'print'
+2019-12-30 14:24:15.700 [info]  Open map	D:\YDWE\Maps\JFTestMapTrigger\src.w3x
+2019-12-30 14:24:15.700 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/japi
+2019-12-30 14:24:15.703 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydwe
+2019-12-30 14:24:15.792 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/ui/ydtrigger
+2019-12-30 14:24:15.804 [info]  Loading ui from D:/Git/YDWE/Build/publish/Release/unknownui
+2019-12-30 14:27:59.071 [info]  ClosePathAsArchive	Custom_V1
+2019-12-30 14:27:59.072 [info]  ********************* on exit start *********************
+2019-12-30 14:27:59.072 [info]  Unload plugin YDTaskbarSupport.
+2019-12-30 14:27:59.072 [info]  Unload plugin Tesh.
+2019-12-30 14:27:59.073 [info]  Unload plugin YDTrigger.
+2019-12-30 14:27:59.073 [info]  Unload plugin YDClient.
+2019-12-30 14:27:59.073 [info]  ********************* on exit end *********************
+2019-12-30 14:27:59.073 [info]  Main program exit.
+2019-12-30 14:27:59.080 [info]  IAT hook cleanup started.
+2019-12-30 14:27:59.080 [info]  WE IAT hook cleaned.
+2019-12-30 14:27:59.080 [info]  Storm.dll IAT hook cleaned.
+2019-12-30 14:27:59.080 [info]  IAT hook cleanup completed.
+2019-12-30 14:27:59.080 [info]  Inline hook uninstallation begins!
+2019-12-30 14:27:59.080 [info]  Inline hook uninstallation finished!
+2019-12-30 14:27:59.080 [info]  LuaEngine has been shut down.
