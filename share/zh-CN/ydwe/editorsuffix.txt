@@ -49,9 +49,9 @@ EditorSuffix=(中立 2)
 [Adtg]
 EditorSuffix=(中立 1)
 [ACnr]
-EditorSuffix=(生命恢复)
+EditorSuffix=(中立)
 [ANre]
-EditorSuffix=(魔法恢复)
+EditorSuffix=(中立)
 [ANb2]
 EditorSuffix=(中立敌对 3)
 [ACbc]

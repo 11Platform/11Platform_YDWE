@@ -614,9 +614,7 @@ function mt:create_report()
                 lines[#lines+1] = err
                 buf[#buf+1] = '+ ' .. err
             end
-            if log then
-                log.error(table.concat(buf, '\n'))
-            end
+            log.error(table.concat(buf, '\n'))
         end
     end
 	if #lold > 0 then
@@ -676,9 +674,7 @@ end
 
 function mt:listen_error(w2l)
     function w2l.messager.report(type, level, content, tip)
-        if log then
-            log.info(type, content, tip)
-        end
+        log.info(type, content, tip)
         if type == 'INVALID_OBJECT_DATA' then
             if not content or not tip then
                 return
@@ -709,12 +705,6 @@ local function eq_obj(a, b)
             goto CONTINUE
         end
         if type(v) ~= type(b[k]) then
-            if v == nil then
-                return b[k] == 0 or b[k] == ''
-            end
-            if b[k] == nil then
-                return v == 0 or v == ''
-            end
             return false
         end
         if type(v) == 'table' then

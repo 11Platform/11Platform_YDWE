@@ -1,4 +1,4 @@
-fs = require 'bee.filesystem'
+require "filesystem"
 require "localization"
 local ffi = require "ffi"
 local root = fs.ydwe_devpath()

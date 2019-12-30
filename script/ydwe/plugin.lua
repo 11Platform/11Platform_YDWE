@@ -2,7 +2,7 @@ local uni = require 'ffi.unicode'
 
 plugin = {}
 plugin.loaders = {}
-plugin.blacklist = { 'YDTileLimitBreaker', 'YDCustomObjectId', 'YDWeHelper' }
+plugin.blacklist = { 'YDTileLimitBreaker', 'YDCustomObjectId' }
 
 local getdevpath
 if fs.ydwe_path() == fs.ydwe_devpath() then

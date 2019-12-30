@@ -3,7 +3,7 @@
 
 //===========================================================================  
 //===========================================================================  
-//自定义事件 
+//�Զ����¼� 
 //===========================================================================
 //===========================================================================   
 
@@ -14,10 +14,6 @@ globals
 #define YDWE_DamageEventTrigger
     trigger yd_DamageEventTrigger = null
 #endif
-    private constant integer DAMAGE_EVENT_SWAP_TIMEOUT = 600  // 每隔这个时间(秒), yd_DamageEventTrigger 会被移入销毁队列
-    private constant boolean DAMAGE_EVENT_SWAP_ENABLE = true  // 若为 false 则不启用销毁机制
-    private trigger yd_DamageEventTriggerToDestory = null
-
     private trigger array DamageEventQueue
     private integer DamageEventNumber = 0
 	
@@ -29,7 +25,7 @@ globals
 endglobals
 	
 //===========================================================================  
-//任意单位伤害事件 
+//���ⵥλ�˺��¼� 
 //===========================================================================
 function YDWEAnyUnitDamagedTriggerAction takes nothing returns nothing
     local integer i = 0
@@ -50,49 +46,21 @@ function YDWEAnyUnitDamagedFilter takes nothing returns boolean
     return false
 endfunction
 
-function YDWEAnyUnitDamagedEnumUnit takes nothing returns nothing
-    local group g = CreateGroup()
-    local integer i = 0
-    loop
-        call GroupEnumUnitsOfPlayer(g, Player(i), Condition(function YDWEAnyUnitDamagedFilter))
-        set i = i + 1
-        exitwhen i >= bj_MAX_PLAYER_SLOTS
-    endloop
-    call DestroyGroup(g)
-    set g = null
-endfunction
-
-function YDWEAnyUnitDamagedRegistTriggerUnitEnter takes nothing returns nothing
+function YDWEAnyUnitDamagedEnumUnit takes nothing returns nothing   
     local trigger t = CreateTrigger()
     local region  r = CreateRegion()
-    local rect world = GetWorldBounds()
-    call RegionAddRect(r, world)
+    local group   g = CreateGroup()
+
+    call RegionAddRect(r, GetWorldBounds())
     call TriggerRegisterEnterRegion(t, r, Condition(function YDWEAnyUnitDamagedFilter))
-    call RemoveRect(world)
-    set t = null
+    call GroupEnumUnitsInRect(g, GetWorldBounds(), Condition(function YDWEAnyUnitDamagedFilter))
+
+    call DestroyGroup(g)
     set r = null
-    set world = null
+    set t = null
+    set g = null
 endfunction
-
-// 将 yd_DamageEventTrigger 移入销毁队列, 从而排泄触发器事件
-function YDWESyStemAnyUnitDamagedSwap takes nothing returns nothing
-    local boolean isEnabled = IsTriggerEnabled(yd_DamageEventTrigger)
-
-    call DisableTrigger(yd_DamageEventTrigger)
-    if yd_DamageEventTriggerToDestory != null then
-        call DestroyTrigger(yd_DamageEventTriggerToDestory)
-    endif
-
-    set yd_DamageEventTriggerToDestory = yd_DamageEventTrigger
-    set yd_DamageEventTrigger = CreateTrigger()
-    if not isEnabled then
-        call DisableTrigger(yd_DamageEventTrigger)
-    endif
-
-    call TriggerAddAction(yd_DamageEventTrigger, function YDWEAnyUnitDamagedTriggerAction) 
-    call YDWEAnyUnitDamagedEnumUnit()
-endfunction
-
+	
 function YDWESyStemAnyUnitDamagedRegistTrigger takes trigger trg returns nothing
     if trg == null then
         return
@@ -102,11 +70,6 @@ function YDWESyStemAnyUnitDamagedRegistTrigger takes trigger trg returns nothing
         set yd_DamageEventTrigger = CreateTrigger()
         call TriggerAddAction(yd_DamageEventTrigger, function YDWEAnyUnitDamagedTriggerAction) 
         call YDWEAnyUnitDamagedEnumUnit()
-        call YDWEAnyUnitDamagedRegistTriggerUnitEnter()
-        if DAMAGE_EVENT_SWAP_ENABLE then
-            // 每隔 DAMAGE_EVENT_SWAP_TIMEOUT 秒, 将正在使用的 yd_DamageEventTrigger 移入销毁队列
-            call TimerStart(CreateTimer(), DAMAGE_EVENT_SWAP_TIMEOUT, true, function YDWESyStemAnyUnitDamagedSwap)
-        endif
     endif   
     
     set DamageEventQueue[DamageEventNumber] = trg
@@ -114,7 +77,7 @@ function YDWESyStemAnyUnitDamagedRegistTrigger takes trigger trg returns nothing
 endfunction
 
 //===========================================================================  
-//移动物品事件 
+//�ƶ���Ʒ�¼� 
 //===========================================================================  
 function YDWESyStemItemUnmovableTriggerAction takes nothing returns nothing
     local integer i = 0
