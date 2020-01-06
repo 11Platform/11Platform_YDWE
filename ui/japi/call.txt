@@ -1,5 +1,5 @@
 [YDWEPlatformIsInPlatform]
-title = "11平台- 基础-地图在11平台上 [JAPI]"
+title = "[基础] - 11平台- 地图在11平台上 [JAPI]"
 description = "目前地图正在11平台上运行"
 comment = "判断地图是否在11平台上；此功能可以根据地图所在平台做出差异化操作。特别注意：此操作内含有等待。"
 category = TC_NOTHING
@@ -330,7 +330,7 @@ type = integer
 title = "11平台 - 计费 - 消费地图货币 [JAPI]"
 description = "${玩家}消费地图货币${多少}"
 comment = "玩家购买商品消费(弃用)，成功返回ture，失败返回false"
-category = TC_NOTHING
+category = TC_YDHIDE
 returns = boolean
 [[.args]]
 type = player
@@ -352,7 +352,7 @@ type = integer
 min = 1
 
 [EXGetPlayerRealName]
-title = "11平台 - 基础 - 地图内获得玩家平台昵称 [JAPI]"
+title = "[基础] - 11平台 - 地图内获得玩家平台昵称 [JAPI]"
 description = "EXGetPlayerRealName(${玩家})"
 comment = "获得玩家平台昵称"
 category = TC_NOTHING
@@ -424,14 +424,14 @@ returns = integer
 type = player
 
 [EXNetGetTime]
-title = "11平台 - 基础 - 时间函数 [JAPI]"
+title = "[基础] - 11平台 - 时间函数 [JAPI]"
 description = "EXNetGetTime()"
 comment = "时间函数"
 category = TC_NOTHING
 returns = string
 
 [YDWERPGGetMapConfig]
-title = "11平台 - 配置 - 获取地图配置 [JAPI]"
+title = "[配置] - 11平台 - 获取地图配置 [JAPI]"
 description = "YDWERPGGetMapConfig(${key})"
 comment = "获取地图配置"
 category = TC_NOTHING
@@ -440,7 +440,7 @@ returns = string
 type = string
 
 [EXNetStatRemoteData]
-title = "11平台 - 测试 - 统计引用 [JAPI]"
+title = "[测试] - 11平台 - 统计引用 [JAPI]"
 description ="统计引用 EXNetStatRemoteData(${playerId},${key},${value})"
 comment = "统计引用，成功返回true，失败返回false"
 category = TC_NOTHING
@@ -453,10 +453,10 @@ type = string
 type = string
 
 [YDWERPGGetRemoteData]
-title = "11平台 - 存档 - 读取用户数据 [JAPI]"
+title = "11平台 - 读取用户数据 [JAPI]"
 description ="读取用户存档数据 YDWERPGGetRemoteData(${玩家},${key})"
 comment = "读取用户存档数据"
-category = TC_NOTHING
+category = TC_YDSL
 returns = string
 [[.args]]
 type = player
@@ -464,10 +464,10 @@ type = player
 type = string
 
 [YDWESaveRemoteData]
-title = "11平台 - 存档 - 保存用户数据 [JAPI]"
+title = "11平台 - 保存用户数据 [JAPI]"
 description ="保存用户存档数据 YDWESaveRemoteData(${playerId},${key},${value})"
 comment = "保存用户存档数据，成功返回true，失败返回false"
-category = TC_NOTHING
+category = TC_YDSL
 returns = boolean
 [[.args]]
 type = integer

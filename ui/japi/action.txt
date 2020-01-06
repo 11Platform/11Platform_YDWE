@@ -398,22 +398,22 @@ type = CollisionType
 default = "CollisionType01"
 
 [YDWEHighFreqScorePrint]
-title = "11平台 - 测试 - 存档高频显示 [JAPI]"
+title = "[测试] - 11平台 - 存档高频显示 [JAPI]"
 description ="存档高频显示 call YDWEHighFreqScorePrint()"
 comment = "存档高频显示"
 category = TC_NOTHING
 
 [YDWEHighFreqScoreSave]
-title = "11平台 - 测试 - 存档高频测试 [JAPI]"
+title = "[测试] - 11平台 - 存档高频测试 [JAPI]"
 description ="存档高频测试 call YDWEHighFreqScoreSave()"
 comment = "存档高频测试"
 category = TC_NOTHING
 
 [YDWESaveRemoteData]
-title = "11平台 - 存档 - 保存用户数据 [JAPI]"
+title = "11平台 - 保存用户数据 [JAPI]"
 description ="保存用户存档数据 YDWESaveRemoteData(${playerId},${key},${value})"
 comment = "保存用户存档数据，成功返回true，失败返回false"
-category = TC_NOTHING
+category = TC_YDSL
 [[.args]]
 type = integer
 [[.args]]
@@ -422,9 +422,9 @@ type = string
 type = string
 
 [EXNetStatRemoteData]
-title = "11平台 - 测试 - 统计引用 [JAPI]"
-description ="统计引用 EXNetStatRemoteData(${playerId}
-comment = "统计引用，成功返回true，失败返回false"
+title = "[测试] - 11平台 - 统计引用 [JAPI]"
+description ="保存用户存档数据 YDWESaveRemoteData(${playerId},${key},${value})"
+comment = "保存用户存档数据，成功返回true，失败返回false"
 category = TC_NOTHING
 [[.args]]
 type = integer
