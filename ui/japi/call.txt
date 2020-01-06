@@ -1,5 +1,5 @@
 [YDWEPlatformIsInPlatform]
-title = "地图在11平台上 [JAPI]"
+title = "11平台- 基础-地图在11平台上 [JAPI]"
 description = "目前地图正在11平台上运行"
 comment = "判断地图是否在11平台上；此功能可以根据地图所在平台做出差异化操作。特别注意：此操作内含有等待。"
 category = TC_NOTHING
@@ -121,9 +121,9 @@ type = string
 default = "EverguoIsHandsome"
 
 [YDWERPGGetKey]
-title = "11RPG积分 - 读取 [JAPI]"
-description = "11RPG积分 - 读取${玩家}中的〖${数据名}〗"
-comment = "从11RPG积分上获取数据，需要填入正确的数据名。"
+title = "11平台 -积分- 读取用户积分 [JAPI]"
+description = "读取${玩家}积分中的〖${积分项名称}〗"
+comment = "从11RPG积分中查询并获取某项积分项数据，需要填入正确的积分项名称。"
 category = TC_YDSL
 returns = integer
 [[.args]]
@@ -134,8 +134,8 @@ type = string
 default = "EverguoIsHandsome"
 
 [YDWERPGBillingGetStatus]
-title = "11RPG计费 - 读取状态 [JAPI]"
-description = "11RPG计费 - 读取${玩家}中的状态〖${状态名}〗"
+title = "11平台-道具 - 读取状态（时间类道具）数量 [JAPI]"
+description = "读取${玩家}中状态〖${状态名}〗的数量"
 category = TC_YDSL
 returns = integer
 [[.args]]
@@ -146,8 +146,8 @@ type = string
 default = "EverguoIsHandsome"
 
 [YDWERPGBillingGetItem]
-title = "11RPG计费 - 读取道具 [JAPI]"
-description = "11RPG计费 - 读取${玩家}中的道具〖${道具名}〗"
+title = "11平台-道具 - 读取道具（次数类道具）数量 [JAPI]"
+description = "读取${玩家}中道具〖${道具名}〗的数量"
 category = TC_YDSL
 returns = integer
 [[.args]]
@@ -158,8 +158,8 @@ type = string
 default = "EverguoIsHandsome"
 
 [YDWERPGBillingHasStatus]
-title = "11RPG计费 - 存在状态 [JAPI]"
-description = "11RPG计费 - ${玩家}中存在状态〖${状态名}〗"
+title = "11平台-道具 - 存在状态（时间类道具） [JAPI]"
+description = "查询 ${玩家}中是否存在状态〖${状态名}〗"
 category = TC_YDSL
 returns = boolean
 [[.args]]
@@ -170,8 +170,8 @@ type = string
 default = "EverguoIsHandsome"
 
 [YDWERPGBillingHasItem]
-title = "11RPG计费 - 存在道具 [JAPI]"
-description = "11RPG计费 - ${玩家}中存在道具〖${道具名}〗"
+title = "11平台-道具 - 存在道具（次数类道具） [JAPI]"
+description = "查询 ${玩家}中是否存在道具〖${道具名}〗"
 category = TC_YDSL
 returns = boolean
 [[.args]]
@@ -316,8 +316,8 @@ type = effect
 default = "bj_lastCreatedEffect"
 
 [EXNetConsume]
-title = "11平台 - 消费 [JAPI]"
-description = "${玩家}消费${多少}"
+title = "11平台 - 道具 - 地图内直扣妖豆 [JAPI]"
+description = "${玩家}消费妖豆${多少}"
 comment = "玩家购买商品，成功返回ture，失败返回false"
 category = TC_NOTHING
 returns = boolean
@@ -327,9 +327,9 @@ type = player
 type = integer
 
 [EXNetCommonConsume]
-title = "11平台 - 消费(一级货币) [JAPI]"
-description = "${玩家}消费(一级货币)${多少}"
-comment = "玩家购买商品消费(一级货币)，成功返回ture，失败返回false"
+title = "11平台 - 计费 - 消费地图货币 [JAPI]"
+description = "${玩家}消费地图货币${多少}"
+comment = "玩家购买商品消费(弃用)，成功返回ture，失败返回false"
 category = TC_NOTHING
 returns = boolean
 [[.args]]
@@ -338,9 +338,9 @@ type = player
 type = integer
 
 [EXNetUseItem]
-title = "11平台 - 道具扣除 [JAPI]"
+title = "11平台 - 道具 - 道具（次数类道具）数量扣除 [JAPI]"
 description = "${玩家}消耗${道具ID}${数量}"
-comment = "玩家请求消耗道具，成功返回ture，失败返回false"
+comment = "玩家请求消耗普通道具，成功返回ture，失败返回false"
 category = TC_NOTHING
 returns = boolean
 [[.args]]
@@ -352,23 +352,23 @@ type = integer
 min = 1
 
 [EXGetPlayerRealName]
-title = "11平台 - 获得玩家真实名字 [JAPI]"
+title = "11平台 - 基础 - 地图内获得玩家平台昵称 [JAPI]"
 description = "EXGetPlayerRealName(${玩家})"
-comment = "获得玩家真实名字"
+comment = "获得玩家平台昵称"
 category = TC_NOTHING
 returns = string
 [[.args]]
 type = player
 
 [YDWEGetRPGRankName]
-title = "11平台 - 显示当前的排名种类名称 [JAPI]"
+title = "11平台 - 积分 - 排行 - 显示当前的积分排行榜名称 [JAPI]"
 description = "YDWEGetRPGRankName()"
-comment = "显示当前的排名种类名称"
+comment = "显示当前的积分排行榜名称"
 category = TC_NOTHING
 returns = string
 
 [YDWEGetRPGTopName]
-title = "11平台 - 显示在排行榜中第rank位的玩家名 [JAPI]"
+title = "11平台 - 积分 - 排行 - 显示在排行榜中第rank位的玩家名 [JAPI]"
 description = "YDWEGetRPGTopName(${排名})"
 comment = "显示在排行榜中第rank位的玩家名，如果不存在则返回空字符串"
 category = TC_NOTHING
@@ -378,7 +378,7 @@ type = integer
 min = 1
 
 [YDWEGetRPGTopScore]
-title = "11平台 - 显示在排行榜中第rank位的玩家分数 [JAPI]"
+title = "11平台 - 积分 - 排行 - 显示在排行榜中第rank位的玩家分数 [JAPI]"
 description = "YDWEGetRPGTopScore(${排名})"
 comment = "显示在排行榜中第rank位的玩家分数，如果不存在则返回-1"
 category = TC_NOTHING
@@ -388,7 +388,7 @@ type = integer
 min = 1
 
 [YDWEGetPalyerRPGRank]
-title = "11平台 - 显示玩家的排行 [JAPI]"
+title = "11平台 - 积分 - 排行 - 显示玩家的积分排行名次 [JAPI]"
 description = "YDWEGetPalyerRPGRank(${playerId})"
 comment = "显示玩家的排行，如果不存在则返回-1"
 category = TC_NOTHING
@@ -397,7 +397,7 @@ returns = integer
 type = integer
 
 [YDWEGetPalyerRPGRankScore]
-title = "11平台 - 显示玩家的分数 [JAPI]"
+title = "11平台 - 积分 - 排行 - 显示玩家的积分排行分数 [JAPI]"
 description = "YDWEGetPalyerRPGRankScore(${playerId})"
 comment = "显示玩家的分数，如果不存在则返回-1"
 category = TC_NOTHING
@@ -406,32 +406,32 @@ returns = integer
 type = integer
 
 [YDWERPGBillingGetCurrency]
-title = "11平台 - 获取玩家货币余额 [JAPI]"
+title = "11平台 - 道具 - 读取玩家妖豆数量 [JAPI]"
 description = "YDWERPGBillingGetCurrency(${玩家})"
-comment = "获取玩家货币余额"
+comment = "获取玩家妖豆数量"
 category = TC_NOTHING
 returns = integer
 [[.args]]
 type = player
 
 [YDWERPGBillingGetCommonCurrency]
-title = "11平台 - 获取玩家货币余额(一级货币) [JAPI]"
+title = "11平台 - 计费 - 获取玩家地图货币余额 [JAPI]"
 description = "YDWERPGBillingGetCommonCurrency(${玩家})"
-comment = "获取玩家货币余额(一级货币)"
+comment = "获取玩家地图货币余额"
 category = TC_NOTHING
 returns = integer
 [[.args]]
 type = player
 
 [EXNetGetTime]
-title = "11平台 - 时间函数 [JAPI]"
+title = "11平台 - 基础 - 时间函数 [JAPI]"
 description = "EXNetGetTime()"
 comment = "时间函数"
 category = TC_NOTHING
 returns = string
 
 [YDWERPGGetMapConfig]
-title = "11平台 - 获取地图配置 [JAPI]"
+title = "11平台 - 配置 - 获取地图配置 [JAPI]"
 description = "YDWERPGGetMapConfig(${key})"
 comment = "获取地图配置"
 category = TC_NOTHING
@@ -440,7 +440,7 @@ returns = string
 type = string
 
 [EXNetStatRemoteData]
-title = "11平台 - 统计引用 [JAPI]"
+title = "11平台 - 测试 - 统计引用 [JAPI]"
 description ="统计引用 EXNetStatRemoteData(${playerId},${key},${value})"
 comment = "统计引用，成功返回true，失败返回false"
 category = TC_NOTHING
@@ -453,9 +453,9 @@ type = string
 type = string
 
 [YDWERPGGetRemoteData]
-title = "11平台 - 读取用户缓存数据 [JAPI]"
-description ="读取用户缓存数据 YDWERPGGetRemoteData(${玩家},${key})"
-comment = "读取用户缓存数据"
+title = "11平台 - 存档 - 读取用户数据 [JAPI]"
+description ="读取用户存档数据 YDWERPGGetRemoteData(${玩家},${key})"
+comment = "读取用户存档数据"
 category = TC_NOTHING
 returns = string
 [[.args]]
@@ -464,9 +464,9 @@ type = player
 type = string
 
 [YDWESaveRemoteData]
-title = "11平台 - 保存用户缓存数据 [JAPI]"
-description ="保存用户缓存数据 YDWESaveRemoteData(${playerId},${key},${value})"
-comment = "保存用户缓存数据，成功返回true，失败返回false"
+title = "11平台 - 存档 - 保存用户数据 [JAPI]"
+description ="保存用户存档数据 YDWESaveRemoteData(${playerId},${key},${value})"
+comment = "保存用户存档数据，成功返回true，失败返回false"
 category = TC_NOTHING
 returns = boolean
 [[.args]]

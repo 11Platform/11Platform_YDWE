@@ -1,4 +1,4 @@
 return {
-    commit = '3d0f02220dee490f5f985258900bd265f0068390',
-    date = 'Mon Dec 30 17:45:15 2019 +0800',
+    commit = 'cea60fa791e31e0e8551a1c4f61c415646fe20b2',
+    date = 'Mon Jan 6 09:31:01 2020 +0800',
 }
